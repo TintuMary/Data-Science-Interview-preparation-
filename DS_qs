@@ -1,0 +1,123 @@
+1. Smoothing is a technique applied to time series to remove the ne-grained variation between
+	time steps. The hope of smoothing is to remove noise and better expose the signal of the
+	underlying causal processes.
+	
+	Smoothing is useful as a data preparation technique as it can reduce the
+random variation in the observations and better expose the structure of the underlying causal
+processes
+
+2. white noise, it
+is a sequence of random numbers and cannot be predicted.
+Does your series have a non-zero mean?
+ Does the variance change over time?
+ Do values correlate with lag values?
+	
+3. There is a tool called a random walk that can help you understand the
+predictability of your time series forecast problem.
+
+Augmented Dickey-Fuller test:  The null hypothesis of the test is that the time series is non-stationary.
+
+the mean forecast error is also called the forecast bias.
+
+ARIMA:
+p: The number of lag observations included in the model, also called the lag order.
+ d: The number of times that the raw observations are dierenced, also called the degree
+of dierencing.
+ q: The size of the moving average window, also called the order of moving average.
+
+Sensitivity: The proportion of true positives identified correctly. In this case, the proportion of healthy patients correctly identified by the diagnostic tool. This is sometimes referred to as “recall.”
+SN = True Positives / (True Positives + False Negatives)
+inverse (1-sensitivity) = false negative rate. Healthy patients not detected by the tool were falsely identified as having CAD. False negatives are also known as Type II error.
+Specificity: The proportion of true negatives identified correctly. In this case, the proportion of patients with CAD correctly identified by the diagnostic tool.
+SP = True Negatives / (True Negatives + False Positives)
+inverse (1-specificity) = false positive rate. Patients with CAD were falsely identified as being CAD-free. False positives are also known as Type I error.
+Positive Predictive Value: The proportion of positives reported by the tool that, in reality, are positive. For the group of patients where the diagnostic tool reports absence of CAD, PPV is the proportion of the patients that actually do not have the disease. This is sometimes referred to as “precision.”
+PPV = True Positives / (True Positives + False Positives)
+Negative Predictive Value: The proportion of negatives reported by the tool that, in reality, are negative. For the group of patients where the diagnostic tool reports a presence of CAD, NPV is the proportion of the patients that actually do not have CAD.
+NPV = True Negatives / (True Negatives + False Negatives)
+
+               | Positive Prediction | Negative Prediction
+Positive Class | True Positive (TP)  | False Negative (FN)
+Negative Class | False Positive (FP) | True Negative (TN)
+
+
+Recall is a metric that quantifies the number of correct positive predictions made out of all positive predictions that could have been made.
+Recall = TruePositives / (TruePositives + FalseNegatives)
+
+Precision is a metric that quantifies the number of correct positive predictions made
+Precision = TruePositives / (TruePositives + FalsePositives)
+
+Maximizing precision will minimize the number false positives, whereas maximizing the recall will minimize the number of false negatives.
+
+Type I error as telling a man he is pregnant, while Type II error means you tell a pregnant woman she isn’t carrying a baby
+Type I error is a false positive, while Type II error is a false negative
+
+Precision: Appropriate when minimizing false positives is the focus.
+Recall: Appropriate when minimizing false negatives is the focus.
+
+Ridge - slope^2
+
+probability = p(data | distribution) - data willchange
+
+Liklihood = L(distribution | data)- distribution will change- value of Y axis
+
+a probability distribution is the mathematical function that gives the probabilities of occurrence of different possible outcomes for an experiment
+--------------------
+What is Data Science?
+What is logistic regression in Data Science?
+Name three types of biases that can occur during sampling
+Discuss Decision Tree algorithm
+What is Prior probability and likelihood?
+Explain Recommender Systems?
+Name three disadvantages of using a linear model
+Why do you need to perform resampling?
+List out the libraries in Python used for Data Analysis and Scientific Computations.
+What is Power Analysis?
+Explain Collaborative filtering
+What is bias?
+Discuss 'Naive' in a Naive Bayes algorithm?
+What is a Linear Regression?
+State the difference between the expected value and mean value
+What the aim of conducting A/B Testing?
+What is Ensemble Learning?
+Explain Eigenvalue and Eigenvector
+
+-------------------------------------------
+
+Anomaly detection performance : cross-scoring
+
+-----------------------------------------------
+ROC curve summarizes all of the confusion matrices that each threshold produced. 
+
+Homoskedastic (also spelled "homoscedastic") refers to a condition in which the variance of the residual, or error term, in a regression model is constant. 
+That is, the error term does not vary much as the value of the predictor variable changes.
+
+degrees of freedom = n-k-1 (n number of observation , k independent variables)
+
+How does degrees of freedom related to R2 :
+	As degrees of freedom decrese when mode variable adding to model R2 will only increase
+
+Statistical Power: What it is, How to Calculate it :
+
+	The statistical power of a study (sometimes called sensitivity) is how likely the study is to distinguish an actual effect from one of chance. It’s 
+	the likelihood that the test is correctly rejecting the null hypothesis (i.e. “proving” your hypothesis). For example, 
+	a study that has an 80% power means that the study has an 80% chance of the test having significant results.
+
+A high statistical power means that the test results are likely valid. As the power increases, the probability of making a Type II error decreases.
+A low statistical power means that the test results are questionable.
+Statistical power helps you to determine if your sample size is large enough.
+It is possible to perform a hypothesis test without calculating the statistical power. If your sample size is too small, your results may be 
+inconclusive when they may have been conclusive if you had a large enough sample.
+
+
+why activation function?
+what kind of model temp to overfit ?
+differnce in linear based models and tree based models
+gradient desent ?
+differnce between stanrdardscalarand minmaxscalar
+use of lamda function ?
+what happen if duplicate try to insert duplicate key in dictionary
+percentile ? how to calculae in pthon- 65th percentile of distribution is 32. what is the meaning
+conditional probability
+what happen to mean meadian andstd if add a constant to the numbers
+how linear regression works
